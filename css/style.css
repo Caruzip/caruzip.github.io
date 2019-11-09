@@ -1,0 +1,35 @@
+
+body {
+    background-image: url("https://caruzip.github.io/images/background.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+}
+
+p {
+    font-size: 40px;
+    font-family: monospace;
+    color: white;
+    text-align: center; 
+}
+
+button {
+    background-color:maroon;
+    border: 1px solid white;
+    color: white;
+    padding: 15px 30px;
+    font-family: monospace;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    position: absolute;
+    bottom:0;
+    left:42%;
+
+}
