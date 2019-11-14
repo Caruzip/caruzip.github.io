@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Lab 8 - Dynamic Buttons and CSS Part A - </title>
+</head>
+
+<body>
+
+    <h1> Lab 8 - Dynamic Buttons and CSS Part A </h1>
+    <p> Click each button to see a message in the console log. </p>
+
+    <script>
+        
+        /* the alphabet button generator */
+        var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        function alpha_gen(number) {
+            for (i = 0; i < number; i++) {
+                var btn = document.createElement("BUTTON");
+                document.body.appendChild(btn);
+                let letter = alphabet.slice(i, i + 1)
+                btn.innerHTML = letter;
+                btn.onclick = function() {
+                    click_message(letter);
+                };
+            }
+        }
+
+        /* the console log click message */
+        function click_message(letter) {
+            console.log("Button " + letter + " was clicked");
+        }
+
+        /* invocation */
+        alpha_gen(26) 
+
+    </script>
+
+</body>
+
+</html>
